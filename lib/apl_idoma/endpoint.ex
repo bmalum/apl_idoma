@@ -14,8 +14,6 @@ defmodule AplIdoma.Endpoint do
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
   if code_reloading? do
-    socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
-    plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
   end
 
@@ -36,7 +34,7 @@ defmodule AplIdoma.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_apl_idoma_key",
-    signing_salt: "hrP5T0AP"
+    signing_salt: "ySZNKx2n"
 
   plug AplIdoma.Router
 end

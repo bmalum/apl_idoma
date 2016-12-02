@@ -12,8 +12,8 @@ config :apl_idoma,
 # Configures the endpoint
 config :apl_idoma, AplIdoma.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "YAgX1NDaqcJ8FdeHhopGynBFYhzSd4TqQXcAipAGeG2zI3xLBPFPaRpGaUzzzUxh",
-  render_errors: [view: AplIdoma.ErrorView, accepts: ~w(html json)],
+  secret_key_base: "q6QjF2Q1mPBvJP5eyKN5LWy33x2XzkPFRwCNiMPD/08ZOKxgDvi/RcS1luBmEBbZ",
+  render_errors: [view: AplIdoma.ErrorView, accepts: ~w(json)],
   pubsub: [name: AplIdoma.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
